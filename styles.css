@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pessoas{
+    margin-top: 50px;
+}
+.alimentos{
+    margin-top: 50px;
+}
+.tabela{
+    width: 500px;
+    height: 200;
+    text-align: center;
+}
+.tabelaResultado{
+    margin-top: 20px;
+    width: 400px;
+    height: 200;
+    text-align: center;
+}
+#col1{
+    text-align: left;
+}

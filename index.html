@@ -4,24 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>ChurrascoJS</title>
 </head>
 <body>
-    <h1>----- CHURRASCO -----</h1>
-    
-    <div class="conteudo">
-    <p id="adultos">Adultos (que consomem bebidas alcoólicas).......:</p>
-    <p id="adultosAlcool">Adultos (que não consomem bebidas alcoólicas)...:</p>
-    <p id="criancas">Crianças........................................:</p>
-    <br>
-    <p id="carne">Carne.............:</p>
-    <p id="acompanhamento">Acompanhamentos...:</p>
-    <p id="cerveja">Cerveja...........:</p>
-    <p id="refrigerante">Refrigerante......:</p>
-    <p id="agua">Água..............:</p>
+    <h1>CHURRASCO</h1>
+    <h2>Tabela de consumo:</h2>
+   
+    <table border class="tabela">
+        <thead class="headTabela">
+            <tr>
+                <th>Item</th>
+                <th>Por adulto</th>
+                <th>Por criança</th>
+            </tr>
+        </thead>
+        <tbody class="corpoTabela">
+            <tr>
+                <td id="col1">Carne</td>
+                <td>400g</td>
+                <td>200g</td>
+            </tr>
+            <tr>
+                <td id="col1">Acompanhamentos</td>
+                <td>200g</td>
+                <td>200g</td>
+            </tr>
+            <tr>
+                <td id="col1">Cerveja</td>
+                <td>2L</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td id="col1">Refrigerante</td>
+                <td>500ml</td>
+                <td>500ml</td>
+            </tr>
+            <tr>
+                <td id="col1">Água</td>
+                <td>400ml</td>
+                <td>400ml</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="pessoas">
+        <p>Adultos (que não consomem bebidas alcoólicas):</p>
+        <p><input type="number" name="txtad" id="txtad" placeholder="quantidade"></p>
+        <p>Adultos (que consomem bebidas alcoólicas):</p>
+        <p><input type="number" name="txtadalc" id="txtadalc" placeholder="quantidade"></p>
+        <p>Crianças:</p>
+        <p><input type="number" name="txtcrian" id="txtcrian" placeholder="quantidade"></p>
+        <input type="button" value="CALCULAR" onclick="calcular()">
+        <p id="resposta">Resultado:</p>
     </div>
-    <script src="index.js"></script>
-
-
+    <table border class="tabelaResultado">
+        <thead class="headTabela">
+            <tr>
+                <th>Item</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody class="corpoTabela">
+            <tr>
+                <td id="col1">Carne</td>
+                <td id="carne"></td>
+            </tr>
+            <tr>
+                <td id="col1">Acompanhamentos</td>
+                <td id="acompanhamento"></td>
+            </tr>
+            <tr>
+                <td id="col1">Cerveja</td>
+                <td id="cerveja"></td>
+            </tr>
+            <tr>
+                <td id="col1">Refrigerante</td>
+                <td id="refrigerante"></td>
+            </tr>
+            <tr>
+                <td id="col1">Água</td>
+                <td id="agua"></td>
+            </tr>
+        </tbody>
+    </table>
+<script src="index.js"></script>
 </body>
 </html>

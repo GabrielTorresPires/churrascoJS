@@ -1,5 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,500&display=swap');
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://i.pinimg.com/originals/7b/4e/30/7b4e3003bde0c807282ff4b192ff3203.jpg")  ;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size:40px;
+    color: aliceblue;
+    text-shadow: 1px 0 5px orange;
+
+}
+h2{
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 .pessoas{
     margin-top: 50px;
@@ -7,17 +29,81 @@ body{
 .alimentos{
     margin-top: 50px;
 }
-.tabela{
+.table{
+    font-family: 'Roboto', sans-serif;
     width: 500px;
     height: 200;
     text-align: center;
-}
-.tabelaResultado{
     margin-top: 20px;
-    width: 400px;
-    height: 200;
-    text-align: center;
+    color: antiquewhite;
 }
+
+th{
+    color:goldenrod ;
+}
+
 #col1{
     text-align: left;
+}
+
+#resposta{
+    margin-top: 20px;
+}
+
+.conteudo{
+    background: rgb(255, 230, 8);
+    background: linear-gradient(90deg, rgb(126, 0, 0) 0%, rgb(230, 197, 10) 100%);
+    background: -moz-linear-gradient(90deg, rgb(136, 3, 3) 0%, rgb(255, 220, 20) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(53, 1, 1) 0%, hsla(1, 92%, 47%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#e9d022", endColorstr="#e60b09", GradientType=1 );
+    border-radius: 80px;
+    padding: 70px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.388);
+    color: antiquewhite; 
+}
+
+input[type='button']{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    border: none    ;
+    transition: 0.5s ease;
+    display: inline;
+    margin-top: 20px;
+}
+input[type='button']:hover{
+    background-color: goldenrod;
+}
+
+#botao{
+    text-align: center;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#qtd{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size:20px;
+    color: aliceblue;
+    text-shadow: 2px 0 10px orange;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
 }

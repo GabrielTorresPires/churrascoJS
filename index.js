@@ -33,7 +33,7 @@ var resultadoCerveja = (qtdAdultoAlcool * cervejaLitroAdulto)
 var resultadoRefrigerante = (qtdAdulto * refrigeranteMlAdulto + qtdAdultoAlcool * refrigeranteMlAdulto + qtdcriancas * refrigeranteMlCrianca) / 1000
 var resultadoAgua = (qtdAdulto * aguaMlAdulto + qtdAdultoAlcool * aguaMlAdulto + qtdcriancas * aguaMlcrianca) / 1000
 
-document.getElementById("resposta").innerHTML = `<p>Resultado:</p>`
+
 document.getElementById("carne").innerHTML = `${resultadoCarne}kg`
 document.getElementById("acompanhamento").innerText = `${resultadoAcompanhamentos}kg`
 document.getElementById("cerveja").innerText = `${resultadoCerveja}L`
